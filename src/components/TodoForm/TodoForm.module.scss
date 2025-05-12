@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__input {
+    width: 45%;
+    height: 30px;
+    font-size: 1.3rem;
+  }
+
+  &__button {
+    margin-left: 20px;
+    height: 50px;
+    cursor: pointer;
+    color: Black;
+    background-color: beige;
+    font-size: 1.5rem;
+  }
+
+  &__button:hover {
+    background-color: teal;
+    color: white;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__input,
+  &__button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+  }
+}

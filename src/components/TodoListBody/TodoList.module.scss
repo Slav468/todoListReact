@@ -1,0 +1,85 @@
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 0;
+  margin: 15px 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid #555;
+  background-color: #d1cfeb;
+  user-select: none;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #eff8ec;
+    color: #112d49;
+    user-select: none;
+    & svg {
+      color: teal;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  &__button {
+    display: flex;
+    gap: 20px;
+    & svg {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+  }
+}
+
+.todoBody {
+  background-color: #112d49;
+  display: flex;
+  width: 100%;
+}
+
+.completed {
+  transition: all 0.2s ease-in;
+  border-color: gray;
+  color: gray;
+
+  & svg {
+    color: gray;
+  }
+
+  & .check {
+    color: teal;
+    transform: scale(1.8);
+  }
+  & .delete {
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.delete {
+  &:hover {
+    color: red;
+  }
+}
